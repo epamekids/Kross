@@ -2,32 +2,33 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="static/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <title>CH1LLian - Main Page</title>
 
 </head>
-<body>
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">CH1LLian</a>
-        </div>
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/profile">Profile</a></li>
-                <li><a href="/history">Search History</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/accounts/login"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
-                <li><a href="/accounts/signup"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-            </ul>
-        </div>
-    </nav>
+<body style="background:#800080">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CH1LLian</a>
+    </div>
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/history">Search History</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/accounts/login"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+        </ul>
+    </div>
+
     {% block content %}
 
     {% endblock %}

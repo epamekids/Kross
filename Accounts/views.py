@@ -8,7 +8,7 @@ def login(request):
 
 def signup(request):
     if request.method == 'POST':
-        form = SignUpForm(request.POST)
+        form = SignUp(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
@@ -17,5 +17,5 @@ def signup(request):
             login(request, user)
             return redirect('home')
     else:
-        form = SignUpForm()
-    return render(request, 'signUp.html', {'form': form})
+        form = SignUp()
+    return render(request, 'registration/signUp.html', {'form': form})
