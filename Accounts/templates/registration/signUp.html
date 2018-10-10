@@ -1,11 +1,11 @@
 {% extends 'Home1/wrapper.html' %}
-<link rel="stylesheet" href="static/registrarion.css">
+<link rel="stylesheet" href="Home/static/main.css">
 
 {% block content %}
   <h2>Sign up</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign up</button>
+    <a href="/profile">Confirm</a>
   </form>
 {% endblock %}

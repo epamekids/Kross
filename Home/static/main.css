@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Scada|Teko');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed|Scada|Teko');
 
 body {
   padding-top: 10px;
@@ -17,6 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 
 navbar-brand {
   padding-right: 100px;
+  font-family: 'Permanent Marker';
+
 }
 
 a {
@@ -25,6 +27,6 @@ a {
 }
 
 a:hover, a:focus {
-    color: #ffffff;
+    color: #000000;
     outline: 0;
 }
