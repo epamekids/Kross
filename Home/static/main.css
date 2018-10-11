@@ -5,20 +5,33 @@ body {
   background-color: #800080;
   font-family: 'Teko';
   font-weight: 600;
-  font-size: 16px;
+  font-size: 19px;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   padding-top:70px;
   font-family: 'Scada';
+  color: #F5F5F5;
 }
 
-navbar-brand {
-  padding-right: 100px;
-  font-family: 'Permanent Marker';
+h2, h3, h4, h5, h6 {
+  font-family: 'Scada';
+  color: #F5F5F5;
+}
 
+p {
+  font-family: 'Scada';
+  color: #F5F5F5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  font-family: 'Permanent Marker';
+  padding-right: 50px;
+  color: #000;
 }
 
 a {
