@@ -13,19 +13,18 @@ body {
 h1 {
   padding-top:130px;
   font-family: 'Scada';
-  color: #000;
-  font-weight: 600;
+  color: #F5F5F5;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Scada';
-  color: #000;
-  color: #000;
+  color: #F5F5F5;
+  color: #F5F5F5;
 }
 
 p {
   font-family: 'Scada';
-  color: #000;
+  color: #F5F5F5;
 }
 
 .navbar-brand {
@@ -35,14 +34,13 @@ p {
 }
 
 a {
-    color: #000;
+    color: #ffffff;
     font-family: 'Roboto Condensed';
 }
 
 a:hover, a:focus {
-    color: #ffffff;
+    color: #000000;
     outline: 0;
-    background-color: #800080;
 }
 
 .btn-secondary,
