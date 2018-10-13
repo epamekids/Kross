@@ -1,5 +1,6 @@
 ﻿{% extends "Home1/wrapper.html" %}
 {% load crispy_forms_tags %}
+<link rel="stylesheet" href="/static/main.css">
 
 {% block content %}
 
@@ -7,7 +8,7 @@
     <form method="post" class="form-signin">
         <h2 class="form-signin-heading">Sign In</h2>
          {% csrf_token %}
-         {% crispy SignUp %}
+         {% crispy SignIn %}
         <a class="nav-link">Sign In</a>
     </form>
 </div>

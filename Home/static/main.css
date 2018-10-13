@@ -45,10 +45,6 @@ ul.nav a:hover, ul.nav a:focus {
     background-color: #800080;
 }
 
-li.test:focus {
-  background-color: #BA55D3;
-}
-
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {

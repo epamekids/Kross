@@ -11,3 +11,8 @@ class SignUp(UserCreationForm):
 class Meta:
     model = User
     fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2',)
+
+
+class SignIn(forms.Form):
+    nickname = forms.CharField(label = "Your Nickname",required=True)
+    password = forms.CharField(label = "Your Password", required=True)
