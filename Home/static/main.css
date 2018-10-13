@@ -39,10 +39,14 @@ a {
     font-family: 'Roboto Condensed';
 }
 
-a:hover, a:focus {
+ul.nav a:hover, ul.nav a:focus {
     color: #ffffff;
     outline: 0;
     background-color: #800080;
+}
+
+li.test:focus {
+  background-color: #BA55D3;
 }
 
 .btn-secondary,
