@@ -1,13 +1,16 @@
 {% extends 'Home1/wrapper.html' %}
+{% load crispy_forms_tags %}
 <link rel="stylesheet" href="/static/main.css">
 
-<title>CH1LLIAN - SignUp</title>
-
 {% block content %}
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <a href="/profile">Confirm</a>
-  </form>
+
+<div class="jumbotron">
+    <h2>Sign In</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <ul class="nav navbar-nav"><li><a href="/register">Confirm</a></li></ul>
+    </form>
+</div>
+
 {% endblock %}

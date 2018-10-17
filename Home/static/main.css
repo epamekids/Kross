@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed|Scada|Teko');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Quattrocento|Roboto+Condensed|Scada');
 
 body {
   padding-top: 10px;
   background-color: #800080;
-  font-family: 'Teko';
+  font-family: 'Quattrocento';
   font-weight: 600;
   font-size: 19px;
   -webkit-font-smoothing: antialiased;

@@ -2,17 +2,14 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
-class SignUp(UserCreationForm):
-    nickname = forms.CharField(label = "Your Nickname",required=True)
-    firstname = forms.CharField(label ="First Name",required=False)
-    lastname = forms.CharField(label ="Last Name",required=False)
-    email = forms.EmailField(label ="Your Email Address",required=True)
+class SignUp(forms.Form):
+    nickname = forms.CharField(label = "Your nickname",required=True)
+    password = forms.CharField(label = "Your password",required=True)
+    password_confirm = forms.CharField(label = "Confirm your password",required=True)
+    firstname = forms.CharField(label ="First name",required=False)
+    lastname = forms.CharField(label ="Last name",required=False)
+    email = forms.EmailField(label ="Your email address",required=True)
 
-class Meta:
-    model = User
-    fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2',)
-
-
-class SignIn(forms.Form):
-    nickname = forms.CharField(label = "Your Nickname",required=True)
-    password = forms.CharField(label = "Your Password", required=True)
+class LogIn(forms.Form):
+    nickname = forms.CharField(label = "Your nickname",required=True)
+    password = forms.CharField(label = "Your password", required=True)

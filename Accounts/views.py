@@ -1,30 +1,24 @@
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
-from Accounts.forms import SignUp
-
+from Accounts.forms import SignUp, LogIn
+from django.http import HttpResponse
+from Accounts.models import User
 
 def login(request):
-    if request.method == 'POST':
-        form = SignIn(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            return redirect("/profile")
-        else:
-            form = SignIn()
-    return render(request, 'registration/login.html', {'form': SignIn()})
-
+  try:
+      member = request.session.get(username=request.POST['username'])
+      if member.password == request.POST['password']:
+          request.session['member_id'] = member.id
+          return HttpResponse("You're signed in.")
+  except User.DoesNotExist:
+      return HttpResponse("Your nickname or password is incorrect. Try again.")
 
 def signup(request):
     if request.method == 'POST':
         form = SignUp(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            return redirect('/profile')
+            return redirect('/register')
     else:
         form = SignUp()
-    return render(request, 'registration/signUp.html', {'form': form})
+    return render(request, 'registration/signUp.html', {'form': SignUp()})

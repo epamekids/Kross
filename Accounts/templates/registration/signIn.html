@@ -1,16 +1,14 @@
-﻿{% extends "Home1/wrapper.html" %}
+﻿{% extends 'Home1/wrapper.html' %}
 {% load crispy_forms_tags %}
 <link rel="stylesheet" href="/static/main.css">
 
 {% block content %}
-
-<div class="container">
-    <form method="post" class="form-signin">
-        <h2 class="form-signin-heading">Sign In</h2>
-         {% csrf_token %}
-         {% crispy SignIn %}
-        <a class="nav-link">Sign In</a>
+<div class="text-center">
+    <h2>Sign In</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <ul class="nav navbar-nav"><li><a href="/register">Confirm</a></li></ul>
     </form>
 </div>
-
 {% endblock %}
