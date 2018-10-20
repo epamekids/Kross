@@ -1,55 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Quattrocento|Roboto+Condensed|Scada');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
 
 body {
-  padding-top: 10px;
-  background-color: #800080;
-  font-family: 'Quattrocento';
+  font-family: 'Roboto';
   font-weight: 600;
   font-size: 19px;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
 
-h1 {
-  padding-top:130px;
-  font-family: 'Scada';
-  color: #000;
-  font-weight: 600;
+div.mdl-layout__header-row .mdl-layout-title {
+  font-family: 'Permanent Marker';
+  padding-right: 50px;
+  color: #ffffff;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Scada';
-  color: #000;
-  color: #000;
-}
-
-p {
-  font-family: 'Scada';
-  color: #000;
-}
-
-.navbar-brand {
+div.mdl-layout__drawer .mdl-layout-title {
   font-family: 'Permanent Marker';
   padding-right: 50px;
   color: #000;
 }
 
-a {
+a, .mdl-navigation__link {
     color: #000;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto';
+    width: 800;
+    size: 50px;
 }
 
-ul.nav a:hover, ul.nav a:focus {
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
     color: #ffffff;
-    outline: 0;
-    background-color: #800080;
-}
-
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none;
-  background-color: #fff;
-  border: .05rem solid #fff;
 }

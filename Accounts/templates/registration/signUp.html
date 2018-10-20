@@ -1,16 +1,14 @@
-{% extends 'Home1/wrapper.html' %}
+{% extends "Home1/wrapper.html" %}
 {% load crispy_forms_tags %}
 <link rel="stylesheet" href="/static/main.css">
 
 {% block content %}
 
-<div class="jumbotron">
-    <h2>Sign In</h2>
-    <form method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <ul class="nav navbar-nav"><li><a href="/register">Confirm</a></li></ul>
-    </form>
-</div>
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Text...</label>
+  </div>
+</form>
 
 {% endblock %}

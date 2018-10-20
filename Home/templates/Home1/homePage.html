@@ -1,14 +1,22 @@
 {% extends "Home1/wrapper.html" %}
 
 {% block content %}
-<body class="text-center">
-  <h1>Bla-bla-bla.</h1>
-  <main role="main" class="inner cover">
-    <h3 class="lead">
-      Here you can read about some interesting info.
-      Now, the only thing you need to do is to sign up.
-      If  you have already do it - you need to sign in.</h3>
-    <h3> Notice: If you sign up, you will be redirected to your profile.</h3>
-  </main>
+<body>
+  <style>
+    .demo-layout-transparent {
+      background: url('https://s3.amazonaws.com/nikeinc/assets/48627/Air_Mag_Front_Pair_V2_native_1600.jpg?1445446805') center / cover;
+    }
+  </style>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Dashboard</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/accounts/signup">Sign Up</a>
+          <a class="mdl-navigation__link" href="/accounts/login">Sign In</a>
+        </nav>
+      </div>
+    </header>
 </body>
 {% endblock %}
