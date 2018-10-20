@@ -23,8 +23,8 @@ div.mdl-layout__drawer .mdl-layout-title {
 a, .mdl-navigation__link {
     color: #000;
     font-family: 'Roboto';
-    width: 800;
-    size: 50px;
+    width: 600;
+    font-size: 20px;
 }
 
 .demo-layout-transparent .mdl-layout__header,

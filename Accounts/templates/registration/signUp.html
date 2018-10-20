@@ -1,14 +1,16 @@
 {% extends "Home1/wrapper.html" %}
 {% load crispy_forms_tags %}
-<link rel="stylesheet" href="/static/main.css">
+<link rel="stylesheet" href="/static/register.css">
 
 {% block content %}
 
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="sample1">
-    <label class="mdl-textfield__label" for="sample1">Text...</label>
+<form>
+  <div id="nickname">
+    <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="user" pattern="[A-Z,a-z, ]*">
+    <label class="mdl-textfield__label" for="user">Your nickname...</label>
   </div>
+</div>
 </form>
 
 {% endblock %}
