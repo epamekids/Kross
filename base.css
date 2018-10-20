@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
+
+body {
+  font-family: 'Quattrocento';
+  font-weight: 600;
+  font-size: 19px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.mdl-layout__header-row .mdl-layout-title {
+  font-family: 'Permanent Marker';
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+div.mdl-layout__drawer .mdl-layout-title {
+  font-family: 'Permanent Marker';
+  padding-right: 50px;
+  color: #000;
+}
+
+a {
+    color: #000;
+    font-family: 'Roboto';
+    width: 800;
+    size: 50px;
+}
+
+.demo-layout-transparent {
+    background: url('https://s3.amazonaws.com/nikeinc/assets/48627/Air_Mag_Front_Pair_V2_native_1600.jpg?1445446805') center / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    color: #ffffff;
+}
