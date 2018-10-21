@@ -1,11 +1,20 @@
-﻿{% load crispy_forms_tags %}
-<link rel="stylesheet" href="/static/main.css">
+{% extends "Home1/wrapper.html" %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" href="/static/register.css">
 
-<div class="text-center">
-    <h2>Sign In</h2>
-    <form method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <ul class="nav navbar-nav"><li><a href="/register">Confirm</a></li></ul>
-    </form>
-</div>
+{% csrf_token %}
+{{ form.LogIn }}
+<form id="register">
+  <div>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="user">
+      <label class="mdl-textfield__label" for="user">Your Nickname...</label>
+    </div>
+</form>
+
+<form id="register">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="password" id="password">
+      <label class="mdl-textfield__label" for="password">Your Password...</label>
+    </div>
+</form>

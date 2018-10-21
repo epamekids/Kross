@@ -8,14 +8,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-#nickname {
-  padding-top: 70px;
-  padding-left: 70px;
-}
-
-.mdl-textfield__label {
-  padding-top: 70px;
-  padding-left: 70px;
-  margin-top: 70px;
-  margin-left: 70px;
+#register {
+  margin: 70px;
 }

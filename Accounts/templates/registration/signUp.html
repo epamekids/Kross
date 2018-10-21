@@ -1,16 +1,37 @@
 {% extends "Home1/wrapper.html" %}
 {% load crispy_forms_tags %}
-<link rel="stylesheet" href="/static/register.css">
 
 {% block content %}
 
-<form>
-  <div id="nickname">
-    <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="user">
-    <label class="mdl-textfield__label" for="user">Your nickname...</label>
-  </div>
-</div>
-</form>
-
+{% csrf_token %}
+{{ form.SignUp }}
+<link rel="stylesheet" href="/static/register.css">
+   <div class="mdl-card-square mdl-card mdl-shadow--2dp" id="register">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Registration</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text">
+            <label class="mdl-textfield__label" for="user">Your Nickname...</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+             <input class="mdl-textfield__input" type="email" id="email">
+             <label class="mdl-textfield__label" for="email">Your Email...</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password">
+            <label class="mdl-textfield__label" for="password">Your Password...</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password">
+            <label class="mdl-textfield__label" for="password_confirm">Confirm Your Password...</label>
+         </div>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Sign Up</button>
+          </div>
+        </form>
+      </div>
 {% endblock %}
