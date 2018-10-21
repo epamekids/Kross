@@ -11,3 +11,7 @@ body {
 #register {
   margin: 70px;
 }
+
+.mdl-layout__drawer-button {
+  color: #000000;
+}
