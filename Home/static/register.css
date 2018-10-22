@@ -9,9 +9,21 @@ body {
 }
 
 #register {
-  margin: 70px;
+  margin: 97px;
 }
 
 .mdl-layout__drawer-button {
   color: #C0C0C0;
+}
+
+.demo-card-wide, .mdl-card__title {
+  color: #ffffff;
+  font-weight: 600;
+  height: 220px;
+  width: 420px;
+  background: url("https://amp.businessinsider.com/images/59c14b709803c50d098b68e0-750-563.jpg") center/cover;
+}
+
+.demo-card-wide, .mdl-card {
+  width: 420px;
 }
