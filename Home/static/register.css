@@ -13,7 +13,7 @@ body {
 }
 
 .mdl-layout__drawer-button {
-  color: #C0C0C0;
+  display: none;
 }
 
 .demo-card-wide, .mdl-card__title {
