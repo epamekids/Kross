@@ -5,13 +5,13 @@ from django.http import HttpResponse
 from Accounts.models import User
 
 def login(request):
-    return render(request, 'registration/signIn.html', {'form': LogIn()})
     try:
+        return render(request, 'registration/signIn.html', {'form': LogIn()})
         member = User.objects.get(nickname=request.POST.get('nickname'))
         if member.password == request.POST['password']:
             request.session['member_id'] = member.id
             return HttpResponse("You have successfully logged in.")
-            return redirect('/profile')
+            return redirect('/')
     except User.DoesNotExist:
         return HttpResponse("Sorry, but something went wrong.")
 
@@ -21,7 +21,7 @@ def signup(request):
         form = SignUp(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/profile')
+            return redirect('/')
             User.nickname = nickname
             User.password = password
             User.email = email
