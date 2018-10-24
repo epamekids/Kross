@@ -9,7 +9,7 @@ body {
 }
 
 #register {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 50px;
   float: left;
   width: 500px;
@@ -32,15 +32,18 @@ h1,h2,h3,h4,h5{
 }
 #about {
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/373c8d60918085.5a5dd378bd3f3.jpg") center/cover;
-  width: 800px;
+  width: 650px;
   height: 700px;
 }
 
 #about1 {
+  overflow: auto;
+  min-width: 100px;
+  margin-top: 10px;
   margin-right: 175px;
   float: right;
   height: 700px;
-  width: 700px;
+  width: 650px;
 }
 
 #text {
