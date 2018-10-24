@@ -11,6 +11,7 @@ body {
 #register {
   margin-top: 5px;
   margin-left: 50px;
+  float: left;
   width: 500px;
 }
 
@@ -36,8 +37,8 @@ h1,h2,h3,h4,h5{
 }
 
 #about1 {
-  margin-top: -575px;
-  margin-left: 600px;
+  margin-right: 175px;
+  float: right;
   height: 700px;
   width: 700px;
 }
