@@ -9,8 +9,9 @@ body {
 }
 
 #register {
+  overflow: auto;
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 100px;
   float: left;
   width: 500px;
 }
@@ -39,8 +40,8 @@ h1,h2,h3,h4,h5{
 #about1 {
   overflow: auto;
   min-width: 100px;
+  margin-right: 150px;
   margin-top: 10px;
-  margin-right: 175px;
   float: right;
   height: 700px;
   width: 650px;
