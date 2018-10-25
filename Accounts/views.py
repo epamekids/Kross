@@ -10,7 +10,7 @@ def login(request):
         member = User.objects.get(nickname=request.POST.get('nickname'))
         if member.password == request.POST['password']:
             request.session['member_id'] = member.id
-            return HttpResponse("You have successfully logged in.")
+            return HttpResponse("You have successfully signed in.")
             return redirect('/')
     except User.DoesNotExist:
         return HttpResponse("Sorry, but something went wrong.")
