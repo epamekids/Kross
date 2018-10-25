@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5{
   color: #ffffff;
   font-weight: 600;
   height: 220px;
-  width: 500px;
+  width: 100%;
   background: url("https://amp.businessinsider.com/images/59c14b709803c50d098b68e0-750-563.jpg") center/cover;
 }
 #about {
@@ -38,11 +38,13 @@ h1,h2,h3,h4,h5{
 }
 
 #about1 {
+  overflow: hidden;
   min-width: 100px;
   margin-right: 50px;
   margin-top: 10px;
-  float: right;
-  height: 700px;
+}
+
+#about2 {
   width: 100%;
 }
 
