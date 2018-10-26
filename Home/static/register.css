@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5{
   font-weight: 600;
   height: 220px;
   width: 100%;
-  background: url("https://amp.businessinsider.com/images/59c14b709803c50d098b68e0-750-563.jpg") center/cover;
+  background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%); center/cover;
 }
 #about {
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/373c8d60918085.5a5dd378bd3f3.jpg") center/cover;
@@ -54,4 +54,21 @@ h1,h2,h3,h4,h5{
 #text {
   font-size: 17px;
   color: #696969;
+}
+
+#signin {
+  padding:10px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 100px;
+  float: left;
+  width: 450px;
+}
+
+#signin1 {
+  color: #ffffff;
+  font-weight: 600;
+  height: 220px;
+  width: 100%;
+  background: url("https://images.solecollector.com/complex/image/upload/gvyojh4trq7tyttkxrlb.jpg") center/cover;
 }
