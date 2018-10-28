@@ -6,6 +6,7 @@ body {
   font-size: 19px;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  background-color: #ffffff;
 }
 
 #register {
@@ -21,7 +22,7 @@ body {
   display: none;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5 {
   float: right;
 }
 
@@ -30,7 +31,7 @@ h1,h2,h3,h4,h5{
   font-weight: 600;
   height: 220px;
   width: 100%;
-  background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%); center/cover;
+  background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
 }
 #about {
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/373c8d60918085.5a5dd378bd3f3.jpg") center/cover;
