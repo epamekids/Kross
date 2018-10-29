@@ -24,7 +24,6 @@ body {
 .mdl-button .mdl-js-button, .mdl-js-ripple-effect {
   color: #ffffff;
   font-size: 15px;
-  width: 100px;
 }
 
 .demo-avatar {
@@ -40,6 +39,25 @@ body {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+#main1 {
+  padding-top: 50px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+
+.demo-card-widez, .mdl-card__title {
+  color: #fff;
+  height: 512px;
+  width: 100%;
+  background: url('https://i.pinimg.com/originals/0f/39/a1/0f39a1b6bd7fe180200cfd8499b8e677.png') center / cover;
+}
+
+.demo-card-wide, .mdl-card__menu {
+  color: #fff;
 }
 
 #myemail {
