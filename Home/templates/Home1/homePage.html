@@ -2,22 +2,19 @@
 
 {% block content %}
 <body>
-  <style>
-    .demo-layout-transparent {
-      background: url('https://s3.amazonaws.com/nikeinc/assets/48627/Air_Mag_Front_Pair_V2_native_1600.jpg?1445446805') center / cover;
-    }
-  </style>
-  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Home</span>
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Dashboard</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="/accounts/signup">Sign Up</a>
-          <a class="mdl-navigation__link" href="/accounts/login">Sign In</a>
-        </nav>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" href="/accounts/signup">Sign Up</button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" href="/accounts/login">Sign In</button>
       </div>
-    </header>
-    {% include "Carousel/sneaker-carousel.html" %}
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+        <h3>Hello, how are you?</h3>
+    </div>
+  </main>
 </body>
 {% endblock %}
