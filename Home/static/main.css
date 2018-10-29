@@ -19,5 +19,20 @@ body {
 .mdl-button .mdl-js-button, .mdl-js-ripple-effect {
   color: #ffffff;
   font-size: 15px;
-  width: 100px;
+}
+
+.mdl-navigation {
+  background-color: #ffffff;
+}
+
+.demo-avatar {
+  padding-top: 50px;
+  width: 25%;
+}
+
+#myemail {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #808080;
+  font-weight: 400;
 }
