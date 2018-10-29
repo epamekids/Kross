@@ -52,7 +52,6 @@ body {
 .demo-card-widez, .mdl-card__title {
   color: #fff;
   height: 512px;
-  width: 100%;
   background: url('https://i.pinimg.com/originals/0f/39/a1/0f39a1b6bd7fe180200cfd8499b8e677.png') center / cover;
 }
 
