@@ -1,0 +1,15 @@
+body {
+  background: url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1139138/580/580/m1/fpnw/wm0/0001-(63)-.jpg?1459491682&s=70500329f47106cb33ebbb9ea019308b') center
+}
+
+h1,h4,h5,h6,p {
+  font-family: 'Roboto';
+  color: #757575;
+}
+
+.demo-card-wide, .mdl-card {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  float: left;
+}

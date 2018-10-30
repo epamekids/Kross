@@ -43,21 +43,7 @@ body {
 
 #main1 {
   padding-top: 50px;
-}
-
-.demo-card-wide.mdl-card {
-  width: 512px;
-}
-
-.demo-card-widez, .mdl-card__title {
-  color: #fff;
-  height: 512px;
-  background: url('https://i.pinimg.com/originals/0f/39/a1/0f39a1b6bd7fe180200cfd8499b8e677.png') center / cover;
-}
-
-.demo-card-wide, .mdl-card__menu {
-  color: #fff;
-}
+} 
 
 #myemail {
   color: #757575;

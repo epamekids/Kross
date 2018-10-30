@@ -1,0 +1,24 @@
+{% extends "Home1/wrapper.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/info.css">
+
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">{{articles.title}}</span>
+  </div>
+</header>
+<main class="mdl-layout__content">
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <div class="mdl-card__title-text"><h2>{{articles.title}}</h2></div>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>{{articles.post|safe|linebreaks}}</p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <h6>{{articles.date|date:"d-m-Y"}}</h6>
+    </div>
+  </div>
+</main>
+{% endblock %}
