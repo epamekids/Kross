@@ -15,11 +15,13 @@ h1,h4,h5,h6,p {
 }
 
 .mdl-card__title  {
-  background: url('https://i.pinimg.com/originals/c9/0a/a0/c90aa01767c8086b898406cd64e07712.jpg') center/cover;
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f313b864107477.5ac7048bc5292.jpg') center/cover;
   width: 100%;
   height: 450px;
 }
 
 .mdl-card__title-text  {
+  overflow: hidden;
   color: #ffffff;
+  margin-bottom: -30px;
 }
