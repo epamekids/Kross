@@ -1,5 +1,5 @@
 body {
-  background: url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1139138/580/580/m1/fpnw/wm0/0001-(63)-.jpg?1459491682&s=70500329f47106cb33ebbb9ea019308b') center
+  background: url('https://static1.squarespace.com/static/55ffe109e4b07406ad1d5bc4/58b2cb7b03596e617b30a54b/58b3aa981e5b6c828060fa61/1518446060757/IMG_20170226_0001b.jpg') center;
 }
 
 h1,h4,h5,h6,p {
@@ -15,7 +15,7 @@ h1,h4,h5,h6,p {
 }
 
 .mdl-card__title  {
-  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f313b864107477.5ac7048bc5292.jpg') center/cover;
+  background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
   width: 100%;
   height: 450px;
 }

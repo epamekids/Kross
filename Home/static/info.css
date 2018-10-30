@@ -2,14 +2,15 @@ body {
   background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
 }
 
-h1,h3,h4,h5,h6,p {
+h1,h2,h3,h5,h6 {
   font-family: 'Roboto';
   color: #757575;
 }
 
-
-h2 {
+h4 {
+  font-family: 'Roboto';
   color: #000;
+  font-weight: 400;
 }
 
 .mdl-card__actions, .mdl-card--border {
@@ -17,18 +18,21 @@ h2 {
 }
 
 .mdl-card__title {
-  height: 350px;
+  height: 500px;
   width: 100%;
   background: url("https://static1.squarespace.com/static/55ffe109e4b07406ad1d5bc4/t/5a816049c830253b865a6b45/1518433094861/dft-intangible-01.jpg?format=750w") center/cover
 }
 
 .mdl-card__title-text {
-  margin-bottom: -27px;
+  overflow: auto;
+  margin-bottom: -30px;
 }
 
 .demo-card-wide, .mdl-card {
   width: 600px;
+  min-width: 400px;
+  max-width: 600px;
   margin-top: 50px;
-  margin-right: 350px;
-  float: right;
+  float: left;
+  margin-left: 350px;
 }

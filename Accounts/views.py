@@ -1,8 +1,19 @@
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
+from django.views.generic.edit import FormView
+from django.contrib.auth.forms import UserCreationForm
 from Accounts.forms import SignUp, LogIn
 from django.http import HttpResponse
+
+
+class SignUp(FormView):
+    form_class = UserCreationForm
+    success_url = "/"
+    template_name = "registration/isingUp.html"
+
+    def form_valid(self, form):
+      form.save()
+      return super(SignUp, self).form_valid(form)
 
 def login(request):
     if request.method == 'POST':

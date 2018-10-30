@@ -10,11 +10,11 @@
 </header>
 <main class="mdl-layout__content">
   <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__title">
-      <div class="mdl-card__title-text"><h2>{{articles.title}}</h2></div>
+    <div class="mdl-card__title" id="title">
+      <div class="mdl-card__title-text"><h4>{{articles.title}}</h4></div>
     </div>
     <div class="mdl-card__supporting-text">
-      <p>{{articles.post|safe|linebreaks}}</p>
+      {{articles.post|safe|linebreaks}}
     </div>
     <div class="mdl-card__actions mdl-card--border">
       <h6>{{articles.date|date:"d-m-Y"}}</h6>
