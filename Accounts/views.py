@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 
 
-def main(request):
+def profile(request):
     return render(request, "registration/profile.html")
 
 def register(request):
@@ -16,7 +16,7 @@ def register(request):
             password = form.cleaned_data["password1"]
             user = authenticate(username=username,password=password)
             login(request, user)
-            return redirect("/")
+            return redirect("/accounts/profile")
     else:
         form = UserCreationForm()
 
