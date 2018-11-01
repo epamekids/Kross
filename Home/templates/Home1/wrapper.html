@@ -12,25 +12,25 @@
     <meta charset="utf-8"/>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header" id="main">
-    {% block content %}
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% block content %}
 
-    {% endblock %}
-    <div class="mdl-layout__drawer">
-      <header class="demo-drawer-header">
-        <img src="https://virginrealtymexico.com/wp-content/uploads/2017/08/avatar-demo@2x.png" class="demo-avatar">
-      </header>
-      <span id="myemail">{{user.email}}</span>
-      <nav class="mdl-navigation">
-        <a id="lnk1" class="mdl-navigation__link" href="/"><i class="material-icons">home</i>Home</a>
-        <a id="lnk1" class="mdl-navigation__link" href="/accounts/profile"><i class="material-icons">person</i> Profile</a>
-        <a id="lnk1" class="mdl-navigation__link" href="/history"><i class="material-icons">book</i> Search History</a>
-        <a id="lnk1" class="mdl-navigation__link" href="/contact"><i class="material-icons">mail</i> Contact Me</a>
-        <a id="lnk1" class="mdl-navigation__link" href="/news"><i class="material-icons">public</i> News</a>
-        <div class="mdl-layout-spacer"></div>
-        <a id="lnk1" class="mdl-navigation__link" href="/users/logout"><i class="material-icons">input</i> Sign Out</a>
-      </nav>
+      {% endblock %}
+      <div class="mdl-layout__drawer">
+        <header class="demo-drawer-header">
+          <img src="https://virginrealtymexico.com/wp-content/uploads/2017/08/avatar-demo@2x.png" alt="myphoto" class="demo-avatar">
+        </header>
+        <span id="myname">{{user.username}}</span>
+        <nav class="mdl-navigation">
+          <a id="lnk1" class="mdl-navigation__link" href="/"><i class="material-icons">home</i>Home</a>
+          <a id="lnk1" class="mdl-navigation__link" href="accounts/profile"><i class="material-icons">person</i> Profile</a>
+          <a id="lnk1" class="mdl-navigation__link" href="/history"><i class="material-icons">book</i> Search History</a>
+          <a id="lnk1" class="mdl-navigation__link" href="/contact"><i class="material-icons">mail</i> Contact Me</a>
+          <a id="lnk1" class="mdl-navigation__link" href="/news"><i class="material-icons">public</i> News</a>
+          <div class="mdl-layout-spacer"></div>
+          <a id="lnk1" class="mdl-navigation__link" href="/users/logout"><i class="material-icons">input</i> Sign Out</a>
+        </nav>
+      </div>
     </div>
-  </div>
   </body>
 </html>

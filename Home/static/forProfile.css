@@ -1,0 +1,18 @@
+body {
+
+}
+
+#userCard {
+  height: 100%;
+}
+
+#myImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 24px;
+}
+
+#user, #email {
+  margin-left: 10px;
+  margin-top: -20px;
+}
