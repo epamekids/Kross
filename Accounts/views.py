@@ -1,15 +1,14 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
-from Accounts.forms import SignUp
-
+from Accounts.forms import UserCreateForm
 
 def profile(request):
     return render(request, "registration/profile.html")
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = UserCreateForm(request.POST)
 
         if  form.is_valid():
             form.save()
@@ -19,7 +18,7 @@ def register(request):
             login(request, user)
             return redirect("/accounts/profile")
     else:
-        form = UserCreationForm()
+        form = UserCreateForm()
 
-    context = {"form": form}
+    context = {"form":form}
     return render(request, 'registration/register.html', context)

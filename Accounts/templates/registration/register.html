@@ -27,7 +27,10 @@
       <div class="mdl-card__supporting-text">
         <form method="post" action="{% url 'register' %}">
            {% csrf_token %}
-           {{ form }}
+           Username: {{ form.username }}
+           Email: {{ form.email }}
+           Password: {{ form.password1 }}
+           Confirm password: {{ form.password2 }}
           <div class="mdl-card__actions mdl-card--border">
            <button type="submit" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" href="/">Sign Up</button>
           </div>
