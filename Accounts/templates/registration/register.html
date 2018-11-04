@@ -5,6 +5,7 @@
 
 
 <link rel="stylesheet" href="/static/register.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 <header class="mdl-layout__header" id="title">
   <div class="mdl-layout__header-row">
@@ -26,11 +27,13 @@
       </div>
       <div class="mdl-card__supporting-text">
         <form method="post" action="{% url 'register' %}">
-           {% csrf_token %}
-           Username: {{ form.username }}
-           Email: {{ form.email }}
-           Password: {{ form.password1 }}
-           Confirm password: {{ form.password2 }}
+          <div id="data">
+             {% csrf_token %}
+             Username: {{ form.username }}
+             Email: {{ form.email }}
+             Password: {{ form.password1 }}
+             Confirm password: {{ form.password2 }}
+           </div>
           <div class="mdl-card__actions mdl-card--border">
            <button type="submit" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" href="/">Sign Up</button>
           </div>
@@ -59,6 +62,5 @@
     </div>
   </div>
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="/js/formEditor.js"></script>
+<script src="/static/formEditor.js"></script>
 {% endblock %}
