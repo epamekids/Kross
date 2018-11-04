@@ -9,6 +9,11 @@ body {
   background: url('https://i.pinimg.com/originals/4c/52/97/4c5297b1a347d051533c39e3f630a274.jpg') center
 }
 
+#title {
+  color: #000;
+  opacity: 0.8;
+}
+
 #register {
   padding:10px;
   overflow: auto;
@@ -59,6 +64,7 @@ h1,h2,h3,h4,h5 {
 }
 
 #signin {
+  margin-left: 250px;
   padding:5px;
   overflow: hidden;
   margin-top: 10px;

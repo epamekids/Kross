@@ -3,7 +3,7 @@
 {% block content %}
 <link rel="stylesheet" href="/static/allNews.css">
 
-<header class="mdl-layout__header">
+<header class="mdl-layout__header mdl-layout__header--transparent" id="title">
   <div class="mdl-layout__header-row">
     <span class="mdl-layout-title">News</span>
   </div>
@@ -18,7 +18,7 @@
         <h5>{{post.date|date:"d-m-Y"}}</h5>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/news/{{post.id}}">View More</a>
+       <a id="more" href="/news/{{post.id}}"><button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View More</button></a>
       </div>
     </div>
   {% endfor %}

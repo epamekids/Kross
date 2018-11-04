@@ -4,14 +4,13 @@
 <link rel="stylesheet" href="/static/forProfile.css">
 
 <body>
-  <header class="mdl-layout__header">
+  <header class="mdl-layout__header mdl-layout__header--transparent" id="layout">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Profile</span>
+      <span class="mdl-layout-title" id="title">Profile</span>
     </div>
   </header>
   <main class="mdl-layout__content">
     {% if user.is_authenticated %}
-    <h3 id="greeting">Welcome, {{user.first_name}} {{user.last_name}}</h3>
     <div class="demo-card-square mdl-card mdl-shadow--2dp" id="userCard">
       <div class="mdl-card__title mdl-card--expand">
         <img src="https://virginrealtymexico.com/wp-content/uploads/2017/08/avatar-demo@2x.png" alt="myImage" class="demo-avatar" id="myImg">
@@ -22,9 +21,9 @@
       </div>
     </div>
     {% else %}
-    <h2>You are not logged in! Do it now!</h2>
-    <a class="mdl-navigation__link" href="/users/login"><button id="link2" class="mdl-button mdl-js-button mdl-js-ripple-effect">Sign In</button></a>
+    <h2 id="greeting1">You are not logged in! Do it now!</h2>
     <a class="mdl-navigation__link" href="/accounts/register"><button id="link2" class="mdl-button mdl-js-button mdl-js-ripple-effect">Sign Up</button></a>
+    <a class="mdl-navigation__link" href="/users/login"><button id="link3" class="mdl-button mdl-js-button mdl-js-ripple-effect">Sign In</button></a>
     {% endif %}
 
   </main>

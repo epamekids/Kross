@@ -1,0 +1,13 @@
+body {
+  background: url('/static/white.png');
+}
+
+#contacts {
+  margin-left: 50px;
+  float: left;
+}
+
+#title {
+  background-color: #ffffff;
+  color: #000;
+}

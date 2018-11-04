@@ -1,15 +1,17 @@
 {% extends "Home1/wrapper.html" %}
 
 {% block content %}
+<link rel="stylesheet" href="/static/main.css" />
+
 <body>
-  <header class="mdl-layout__header">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Home</span>
+      <span class="mdl-layout-title" id="title">Home</span>
       <div class="mdl-layout-spacer"></div>
-      <div class="mdl-layout__header-row">
-        <a href="/accounts/register"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">person_add</i>Sign Up</button></a>
-        <a href="/users/login"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">person</i>Sign In</button></a>
-      </div>
+      <nav class="mdl-navigation">
+        <a href="/accounts/register"><button id="lnk2" class="mdl-button mdl-js-button mdl-js-ripple-effect">Sign Up</button></a>
+        <a href="/users/login"><button id="lnk2" class="mdl-button mdl-js-button mdl-js-ripple-effect">Sign In</button></a>
+      </nav>
     </div>
   </header>
   <main class="mdl-layout__content">
