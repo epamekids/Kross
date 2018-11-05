@@ -22,6 +22,10 @@ body {
   min-height: 400px;
 }
 
+#huarache {
+  background: url('http://ballinnn.com/wp-content/uploads/2014/10/Best-All-Black-Sneakers-Available.jpg') center/cover
+}
+
 h2 {
   float: right;
   margin-right: 200px;
