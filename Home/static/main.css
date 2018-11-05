@@ -22,11 +22,20 @@ body {
   min-height: 400px;
 }
 
-h2 {
+#huarache {
+  background: url('/static/huarache.jpg')
+}
+
+#h21 {
   float: right;
   margin-right: 160px;
   margin-top: 600px;
   color: #000;
+}
+
+#h22 {
+  float: right;
+  margin-right: 60px;
 }
 
 #title {
@@ -36,6 +45,7 @@ h2 {
 }
 
 .mdl-navigation {
+  color: #000;
   background-color: #ffffff;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -50,19 +60,31 @@ h2 {
   border-radius: 24px;
 }
 
-#lnk1 {
+#lnk3 {
   font-size: 18px;
   color: #000;
 }
 
+#lnk1 {
+  margin-left: 500px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #000;
+}
+
 #lnk2 {
-  margin-top: 20px;
+  margin-right: 700px;
+  margin-top: 5px;
   font-size: 15px;
   color: #000;
 }
 
 #main1 {
   padding-top: 50px;
+}
+
+.mdl-layout__drawer-button {
+  color: #000;
 }
 
 #myname {
