@@ -9,6 +9,10 @@ body {
   background: url('https://i.pinimg.com/originals/4c/52/97/4c5297b1a347d051533c39e3f630a274.jpg') center
 }
 
+span {
+  color: #000;
+}
+
 #title {
   color: #000;
   opacity: 0.8;

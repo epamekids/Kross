@@ -6,23 +6,20 @@ class UserCreateForm(UserCreationForm):
     email = forms.EmailField(required=True)
 
     class Meta:
-        model = User
-        fields = ("username", "email", "password1", "password2")
+        model=User
+        fields = ('username', 'email', 'password1', 'password2')
+
+    def __init__(self,  *args,  **kwargs):
+        super(UserCreateForm, self).__init__(*args, **kwargs)
+
+        self.fields['username'].widget.attrs['class'] = 'mdl-textfield__input'
+        self.fields['email'].widget.attrs['class'] = 'mdl-textfield__input'
+        self.fields['password1'].widget.attrs['class'] = 'mdl-textfield__input'
+        self.fields['password2'].widget.attrs['class'] = 'mdl-textfield__input'
 
     def save(self, commit=True):
-        user = super(UserCreateForm, self).save(commit=False)
-        user.email = self.cleaned_data["email"]
-        if commit:
-            user.save()
-        return user
-
-
-class SignUp(forms.Form):
-    nickname = forms.CharField(label = "Your nickname",required=True)
-    password = forms.CharField(label = "Your password",required=True)
-    password_confirm = forms.CharField(label = "Confirm your password",required=True)
-    email = forms.EmailField(label ="Your email address",required=True)
-
-class LogIn(forms.Form):
-    nickname = forms.CharField(label = "Your nickname",required=True)
-    password = forms.CharField(label = "Your password", required=True)
+      user = super(UserCreateForm, self).save(commit=False)
+      user.email = self.cleaned_data["email"]
+      if commit:
+          user.save()
+      return user
