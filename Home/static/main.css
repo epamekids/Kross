@@ -22,8 +22,10 @@ body {
   min-height: 400px;
 }
 
-#huarache {
-  background: url('/static/huarache.jpg')
+#black {
+  margin-top: 600px;
+  color: #ffffff;
+  background: url('/static/sneakers_black.jpg') center/cover;
 }
 
 #h21 {
@@ -34,8 +36,13 @@ body {
 }
 
 #h22 {
+  margin-top: -15px;
   float: right;
-  margin-right: 60px;
+  margin-right: 185px;
+}
+
+#h23 {
+  margin-right: 200px;
 }
 
 #title {
