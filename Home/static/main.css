@@ -11,15 +11,22 @@ body {
   font-size: 15px;
 }
 
+#forBlack {
+  margin-top: 500px;
+}
+
 #yeezyBlack {
-  background-size: 1500px;
   float: left;
   margin-left: 200px;
-  height: 800px;
-  width: 1100px;
-  min-width: 700px;
-  min-height: 400px;
+  height: 100%;
+  width: 1800px;
+  min-width: 600px;
+  min-height: 300px;
   background: url('/static/yeezyBlack.jpg') center/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #yeezy {
@@ -33,6 +40,10 @@ body {
   min-height: 400px;
 }
 
+#background {
+  color: #ffffff;
+  background: url('https://i.pinimg.com/564x/f9/ca/ed/f9caed6ec953f132195b494ab6b38a84.jpg') center/cover;
+}
 
 #h21 {
   margin-left: 125px;
@@ -42,11 +53,13 @@ body {
 
 #h22 {
   margin-top: -15px;
-  margin-left: 150px;
+  margin-left: 250px;
   color: #000;
 }
 
 #h23 {
+  margin-left: 160px;
+  margin-top: 500px;
   color: #000;
 }
 
