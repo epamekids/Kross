@@ -11,15 +11,26 @@ body {
   font-size: 15px;
 }
 
-#forBlack {
-  margin-top: 500px;
+#huarache {
+  float: left;
+  margin-left: 200px;
+  height: 600px;
+  width: 1100px;
+  min-width: 600px;
+  min-height: 300px;
+  margin-top: 100px;
+  background: url('/static/huarache.jpg') center/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #yeezyBlack {
   float: left;
   margin-left: 200px;
-  height: 100%;
-  width: 1800px;
+  height: 600px;
+  width: 1100px;
   min-width: 600px;
   min-height: 300px;
   background: url('/static/yeezyBlack.jpg') center/cover;
@@ -61,6 +72,12 @@ body {
   margin-left: 160px;
   margin-top: 500px;
   color: #000;
+}
+
+#h24 {
+  margin-left: 300px;
+  margin-top: 525px;
+  color: #ffffff;
 }
 
 #title {
